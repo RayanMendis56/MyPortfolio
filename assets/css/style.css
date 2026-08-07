@@ -2,6 +2,7 @@
     --text-color: #1a1c20;
     --link-color: #4a76ee;
     --background-color: #eeeff1;
+    --navbar-color: #dce7f9;
 }
 
 *{
@@ -32,7 +33,7 @@ a{
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #dce7f9;
+    background-color: var(--navbar-color);
 }
 
 nav{

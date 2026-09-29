@@ -205,6 +205,20 @@ nav .right a span{
     border-radius: 4px;
     font-size: 14px;
 }
+.project-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.project-link:hover{
+    color: var(--link-color);
+}
+.project-link:focus-visible{
+    outline: 2px solid var(--link-color);
+    outline-offset: 3px;
+}
 
 /*SECTION5:Contact*/
 .contact-section{

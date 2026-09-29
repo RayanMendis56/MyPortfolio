@@ -192,53 +192,85 @@ resize: none;
 }
 
 @media (max-width:850px){
-/*Hero Section*/
-.hero-section .text h2{
-    font-size: 35px;
+    .hero-section{
+        margin: 0 30px;
+        padding: 110px 20px 0;
+    }
+    .hero-section .text h2{
+        font-size: 35px;
+    }
+    .hero-section .headshot img{
+        width: min(100%, 340px);
+        height: auto;
     }
 }
 @media (max-width:750px){
-/*Hero Section*/
-.hero-section{
-    flex-direction: column-reverse;
-}
-/*Contact Section*/
-.contact-section .group{
-    flex-direction: column;
-}
+    .hero-section{
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 24px;
+    }
+    .hero-section .headshot{
+        justify-content: center;
+    }
+    .hero-section .headshot img{
+        width: min(100%, 300px);
+    }
+    .contact-section .group{
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 @media (max-width:600px){
-    /*NAV BAR*/
     nav{
-        padding:0 20px;
+        padding: 0 16px;
+    }
+    nav .left a{
+        font-size: 18px;
     }
     nav .right a{
-        font-size:22px;
+        font-size: 18px;
+        margin: 0 6px;
     }
     nav .right a:last-child{
-        color:var(--text-color);
+        color: var(--text-color);
         background-color: transparent;
-        padding:0px;
+        padding: 0;
     }
     nav .right a span{
-        display:none;
+        display: none;
     }
-    /*Hero Section*/
     .hero-section{
-        padding:0 20px;
+        margin: 0;
+        padding: 105px 20px 0;
     }
     .hero-section .text h2{
         font-size: 30px;
     }
-    /*Skills Section*/
     .skills-section{
-        padding:0 20px;
+        padding: 0 20px;
     }
     .skills-section .cells .cell span{
         font-size: 16px;
     }
-    /*Contact Section*/
     .contact-section{
-        padding:0 20px;
+        padding: 0 20px;
+    }
+}
+@media (max-width:400px){
+    nav{
+        padding: 0 12px;
+    }
+    nav .left a{
+        font-size: 16px;
+    }
+    nav .right a{
+        margin: 0 4px;
+    }
+    .hero-section .text h2{
+        font-size: 27px;
+    }
+    .hero-section .headshot img{
+        width: min(100%, 240px);
     }
 }

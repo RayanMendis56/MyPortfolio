@@ -147,6 +147,65 @@ nav .right a span{
     font-size: 18px;
 }
 
+/*SECTION3:Projects*/
+.projects-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.projects-section h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.project-track{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 4px 2px 18px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 2px;
+    scrollbar-color: var(--link-color) #d3d3d3;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+}
+.project-track:focus-visible{
+    outline: 2px solid var(--link-color);
+    outline-offset: 3px;
+}
+.project-card{
+    display: flex;
+    flex: 0 0 min(380px, 82vw);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    min-height: 240px;
+    padding: 24px;
+    border: 1px solid #d3d3d3;
+    border-top: 4px solid var(--link-color);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    scroll-snap-align: start;
+}
+.project-number{
+    color: var(--link-color);
+    font-size: 12px;
+    font-weight: 600;
+}
+.project-card h3{
+    color: var(--text-color);
+    font-size: 24px;
+}
+.project-card p{
+    max-width: 38ch;
+    line-height: 1.6;
+}
+.project-tech{
+    margin-top: auto;
+    padding: 5px 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
 /*SECTION5:Contact*/
 .contact-section{
     padding:0 50px;
@@ -252,6 +311,13 @@ resize: none;
     }
     .skills-section .cells .cell span{
         font-size: 16px;
+    }
+    .projects-section{
+        padding: 0 20px;
+    }
+    .project-card{
+        flex-basis: 85vw;
+        padding: 20px;
     }
     .contact-section{
         padding: 0 20px;

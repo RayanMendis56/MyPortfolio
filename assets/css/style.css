@@ -232,6 +232,7 @@ nav .right a span{
 }
 .certification-track{
     display: flex;
+    align-items: stretch;
     gap: 20px;
     overflow-x: auto;
     padding: 4px 2px 18px;
@@ -248,9 +249,10 @@ nav .right a span{
 .certification-card{
     display: flex;
     flex: 0 0 min(320px, 82vw);
+    align-self: stretch;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 14px;
     min-height: 210px;
     padding: 24px;
@@ -266,8 +268,11 @@ nav .right a span{
     font-weight: 600;
 }
 .certification-card h3{
+    width: 100%;
     color: var(--text-color);
     font-size: 24px;
+    line-height: 1.2;
+    min-height: 3.6em;
 }
 .certification-card p{
     line-height: 1.6;
@@ -296,12 +301,22 @@ nav .right a span{
     justify-content: center;
     width: 100%;
     aspect-ratio: 16 / 9;
+    overflow: hidden;
     border: 1px dashed #a0a0a0;
     border-radius: 4px;
     color: #666;
     background-color: rgba(255, 255, 255, 0.65);
     font-size: 14px;
     text-align: center;
+}
+.certification-image-placeholder img{
+    display: block;
+    min-width: 0;
+    min-height: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: contain;
 }
 
 /*SECTION5:Contact*/

@@ -281,6 +281,14 @@ nav .right a span{
     color: var(--text-color);
     font-weight: 600;
 }
+.certification-card .project-link{
+    padding: 6px 12px;
+    border: 1px solid var(--link-color);
+    border-radius: 4px;
+    color: #3b82b7;
+    font-weight: 400;
+    text-decoration: none;
+}
 .certification-image-placeholder{
     display: flex;
     flex: 0 0 auto;

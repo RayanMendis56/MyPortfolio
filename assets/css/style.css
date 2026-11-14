@@ -106,7 +106,35 @@ nav .right a span{
     
 }
 
-/*SECTION2-Skills*/
+/*SECTION2-Experience*/
+.experience-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+.experience-section h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.experience-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+    border: 1px solid #d3d3d3;
+    border-left: 4px solid var(--link-color);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.experience-card h3{
+    font-size: 24px;
+}
+.experience-meta,
+.experience-date{
+    color: #555;
+    font-size: 14px;
+}
+
+/*SECTION3-Skills*/
 .skills-section{
     padding:0px 50px;
     margin-bottom: 100px;
@@ -147,7 +175,7 @@ nav .right a span{
     font-size: 18px;
 }
 
-/*SECTION3:Projects*/
+/*SECTION4:Projects*/
 .projects-section{
     padding: 0 50px;
     margin-bottom: 100px;
@@ -221,7 +249,7 @@ nav .right a span{
     outline-offset: 3px;
 }
 
-/*SECTION4:Certifications*/
+/*SECTION5:Certifications*/
 .certifications-section{
     padding: 0 50px;
     margin-bottom: 100px;
@@ -319,7 +347,7 @@ nav .right a span{
     object-fit: contain;
 }
 
-/*SECTION5:Contact*/
+/*SECTION6:Contact*/
 .contact-section{
     padding:0 50px;
     margin-bottom: 100px;
@@ -420,6 +448,9 @@ resize: none;
         font-size: 30px;
     }
     .skills-section{
+        padding: 0 20px;
+    }
+    .experience-section{
         padding: 0 20px;
     }
     .skills-section .cells .cell span{

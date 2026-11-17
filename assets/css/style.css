@@ -465,6 +465,13 @@ resize: none;
     filter: brightness(0.7);
 }
 
+.site-footer{
+    padding: 24px 20px;
+    color: var(--text-color);
+    background-color: var(--navbar-color);
+    text-align: center;
+}
+
 @media (max-width:850px){
     .hero-section{
         margin: 0 30px;

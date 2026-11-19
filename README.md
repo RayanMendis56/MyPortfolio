@@ -21,6 +21,7 @@ A responsive personal portfolio website for presenting my background, education,
 ## Run Locally
 
 This is a static website and does not require a build step.
+Python 3 is only needed if you want to run the local web server below.
 
 1. Clone the repository:
 
